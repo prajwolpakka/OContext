@@ -1,8 +1,10 @@
 {
 	"name": "ocontext",
 	"displayName": "OContext",
-	"description": "Generate LLM prompts from selected files/folders",
-	"version": "0.0.1",
+	"publisher": "PrajwolPakka",
+	"description": "Generate a single LLM-ready context file from selected files or folders in VS Code, with the directory structure appended. This makes it easy to feed structured data into AI models like ChatGPT, Claude, or Cursor, while preserving the hierarchical context of your project.",
+	"icon": "icon.png",
+	"version": "0.0.2",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.75.0"
@@ -15,6 +17,10 @@
 		"onCommand:ocontext.generatePromptToClipboard"
 	],
 	"main": "./out/extension.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/prajwolpakka/OContext"
+	},
 	"contributes": {
 		"commands": [
 			{
